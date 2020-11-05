@@ -23,7 +23,7 @@ private MyAdapter adapter;
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
-        adapter = new MyAdapter(this,  mImages);
+
         mImages = new ArrayList<>();
 
         mImages.add(R.drawable.one);
@@ -37,6 +37,7 @@ private MyAdapter adapter;
         mImages.add(R.drawable.nine);
         mImages.add(R.drawable.ten);
 
+        adapter = new MyAdapter(this,  mImages);
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2, GridLayoutManager.VERTICAL,false );
         mRecyclerView.setLayoutManager(gridLayoutManager);
